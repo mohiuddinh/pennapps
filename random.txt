@@ -1,0 +1,28 @@
+<li><a href="#">
+            <span class="icon"><i class="fas fa-cog"></i></span>
+            <span class="title">Blogs</span>
+        </a></li>
+        <li><a href="#">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="title">Home</span>
+        </a></li>
+        <li><a href="#">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title">Books</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-comments" style="color: black;"></i></span>
+          <span class="title">Movies</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-file-alt"></i></span>
+          <span class="title">Sports</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-cog"></i></span>
+          <span class="title">Blogs</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="title">Nature</span>
+        </a></li>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/36c8ce4543.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $(".lower").click(function(){
+        $(".wrapper").toggleClass("collapse"); 
+      });
+    });
+  </script>
+  <title>EduBate</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top_navbar">
+      <div class="lower">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="top_menu">
+        <div class="logo">EduBate</div>
+        <ul>
+          <li><a href="signup.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span class="title">Home</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon">
+            <i class="fas fa-comments"></i>
+          </span>
+          <span class="title">Comments</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span class="title">Sources</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon">
+            <i class="fas fa-cog"></i>
+          </span>
+          <span class="title">Settings</span>
+        </a></li>
+        <li><a href="#">
+          <span class="icon" class = "sign-out" >
+            <i class="fas fa-sign-out-alt"></i>
+          </span>
+          <span class="title" class="sign-out">Sign out</span>
+        </a></li>
+      </ul>
+    </div>
+    <div class="main_container">
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque ratione ipsam eveniet ut alias.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque ratione
+        ipsam eveniet ut alias.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque ratione
+        ipsam eveniet ut alias.
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque ratione
+        ipsam eveniet ut alias.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
