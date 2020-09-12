@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#projects .projects{
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#projects .projects-header h1{
+  margin-bottom: 50px;
+}
+#projects .all-projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects .project-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#projects .projectinfo{
+  padding: 30px;
+  flex-basis: 50%;
+  background-color: #EEEEEE;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
