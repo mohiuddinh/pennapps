@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sources.css">
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/36c8ce4543.js" crossorigin="anonymous"></script>
+  <title>Sources</title>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <div class="main_container">
+    <h1 id="header">Sources</h1>
+    <h2  class="secondary exist">Existing</h2>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione ipsam eveniet ut alias. <span class="x_btn"><button class="btn red" id='x1-btn'><i class="fas fa-times"></i></button></span>
+      
+    </div>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione
+      ipsam eveniet ut alias. <span class="x_btn"><button class="btn red" id='x2-btn'><i class="fas fa-times"></i></button></span>
+    </div>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione
+      ipsam eveniet ut alias. <span class="x_btn"><button class="btn red" id='x3-btn'><i class="fas fa-times"></i></button></span>
+    </div>
+    <h2 class="secondary add">Add </h2>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione
+      ipsam eveniet ut alias. <span class="add_btn green"><button class="btn green"  id='x4-btn'><i class="fas fa-plus"></i></button></span>
+    </div>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione
+      ipsam eveniet ut alias. <span class="add_btn green"><button class="btn green" id='x5-btn'><i class="fas fa-plus"></i></button></span>
+    </div>
+    <div class="item">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia minus vel nemo laboriosam consequatur itaque
+      ratione
+      ipsam eveniet ut alias. <span class="add_btn green"><button class="btn green" id='x-btn'><i class="fas fa-plus"></i></button></span>
+    </div>
+  </div>
+  <div class="modal" id='modals'>
+    <div class="modal-content">
+      <div class="close" id='close-btn'>+</div>
+      <h3 class="italics">Add a Source</h3>
+      <form action="">
+        <input type="text" placeholder="Name of Source">
+        <input type="text" placeholder="URL Link">
+        <a href="" class="button">Submit</a>
+      </form>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("index.html");
+    });
+    var modal = document.getElementById('modals'); 
+    var closebtn = document.getElementById('close-btn'); 
+    var modalbtn1 = document.getElementById('x-btn');
+    var modalbtn2 = document.getElementById('x1-btn');
+    var modalbtn3 = document.getElementById('x2-btn');
+    var modalbtn4 = document.getElementById('x3-btn');
+    var modalbtn5 = document.getElementById('x4-btn');
+    var modalbtn6 = document.getElementById('x5-btn');
+    modalbtn1.addEventListener('click', openModal);
+    modalbtn2.addEventListener('click', openModal); modalbtn3.addEventListener('click', openModal); modalbtn4.addEventListener('click', openModal); modalbtn5.addEventListener('click', openModal); modalbtn6.addEventListener('click', openModal);
+    closebtn.addEventListener('click', closeModal);
+    function openModal(){
+      modal.style.display = 'block';
+    }
+    function closeModal(){
+      modal.style.display='none'; 
+    }
+    window.addEventListener('click', clickOutside);
+    function clickOutside(e){
+      if(e.target==modal){
+        modal.style.display='none';
+      }
+    }
+  </script>
+</body>
+</html>
